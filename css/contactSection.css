@@ -1,0 +1,33 @@
+.contactSection > .title {
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  grid-column: 1 / 4;
+}
+
+.contactSection > .map {
+  grid-column: 2;
+}
+
+.contactSection > .map > .image {
+  width: 18rem;
+}
+
+.contactSection > .contact {
+  grid-column: 3;
+}
+
+.contactSection > .contact > .info {
+  margin-bottom: 1rem;
+}
+
+.contactSection > .contact > .info::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+  background: #fb5;
+}
