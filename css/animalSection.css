@@ -58,3 +58,20 @@
   margin-right: 10px;
   background-color: #fb5;
 }
+
+@media (max-width: 700px) {
+  .animalSection > .images {
+    grid-column: 1;
+  }
+
+  .animalSection > .images .image {
+    height: 8rem;
+  }
+
+  .animalSection > .title {
+    font-size: 3rem;
+  }
+  .animalSection > .descriptions > .description {
+    padding-right: 20px;
+  }
+}

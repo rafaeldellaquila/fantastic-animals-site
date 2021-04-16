@@ -30,3 +30,9 @@
   margin-bottom: 5rem;
   margin-left: 30px;
 }
+
+@media (max-width: 700px) {
+  .faqSection > .questions {
+    grid-column: 1 / 3;
+  }
+}
