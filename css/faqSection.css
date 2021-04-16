@@ -1,0 +1,32 @@
+.faqSection > .title {
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  grid-column: 1 / 4;
+}
+.faqSection > .questions {
+  grid-column: 2 / 4;
+}
+
+.faqSection > .questions > .query {
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: #e54;
+}
+
+.faqSection > .questions > .query::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+  background: #fb5;
+}
+
+.faqSection > .questions > .reply {
+  margin-bottom: 5rem;
+  margin-left: 30px;
+}
