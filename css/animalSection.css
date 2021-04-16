@@ -7,26 +7,26 @@
   grid-column: 1 / 4;
 }
 
-.animalSection .images {
+.animalSection > .images {
   height: 370px;
   overflow-y: scroll;
   grid-column: 2;
 }
 
-.animalSection .images::-webkit-scrollbar {
+.animalSection > .images::-webkit-scrollbar {
   width: 18px;
 }
 
-.animalSection .images::-webkit-scrollbar-thumb {
+.animalSection > .images::-webkit-scrollbar-thumb {
   background-color: #fb5;
   border-left: 4px solid #faf6ed;
 }
 
-.animalSection .images::-webkit-scrollbar-track {
+.animalSection > .images::-webkit-scrollbar-track {
   background-color: #faf6ed;
 }
 
-.animalSection .images .image {
+.animalSection > .images .image {
   height: 370px;
 }
 
@@ -34,15 +34,15 @@
   grid-column: 3;
 }
 
-.animalSection > .descriptions section {
+.animalSection > .descriptions > .description {
   margin-bottom: 3rem;
 }
-.animalSection > .descriptions .text {
+.animalSection > .descriptions > .description > .text {
   line-height: 1.4;
   margin-bottom: 1rem;
 }
 
-.animalSection > .descriptions .title {
+.animalSection > .descriptions > .description > .title {
   font-weight: bold;
   font-size: 1rem;
   text-transform: uppercase;
@@ -50,7 +50,7 @@
   color: #e54;
 }
 
-.animalSection > .descriptions .title::before {
+.animalSection > .descriptions > .description > .title::before {
   content: "";
   display: inline-block;
   width: 40px;
