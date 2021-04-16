@@ -8,14 +8,6 @@
 }
 
 .animalSection .images {
-  opacity: 0.2;
-  height: 370px;
-  overflow-y: scroll;
-  grid-column: 2;
-}
-
-.animalSection .images {
-  opacity: 0.2;
   height: 370px;
   overflow-y: scroll;
   grid-column: 2;
