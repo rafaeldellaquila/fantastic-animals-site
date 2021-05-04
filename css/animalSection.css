@@ -32,11 +32,19 @@
 
 .animalSection > .descriptions {
   grid-column: 3;
+  cursor: pointer;
 }
 
 .animalSection > .descriptions > .description {
   margin-bottom: 3rem;
+  display: none;
 }
+
+.animalSection > .descriptions > .description.active {
+  display: block;
+  animation: show 0.5s forwards;
+}
+
 .animalSection > .descriptions > .description > .text {
   line-height: 1.4;
   margin-bottom: 1rem;
@@ -51,7 +59,7 @@
 }
 
 .animalSection > .descriptions > .description > .title::before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 40px;
   height: 10px;
@@ -73,5 +81,16 @@
   }
   .animalSection > .descriptions > .description {
     padding-right: 20px;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }
