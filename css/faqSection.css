@@ -15,10 +15,20 @@
   margin-top: 2rem;
   margin-bottom: 0.5rem;
   color: #e54;
+  cursor: pointer;
+}
+
+.faqSection > .questions > .query::after {
+  content: '⬎';
+  margin-left: 10px;
+}
+
+.faqSection > .questions > .query.active::after {
+  content: '⬏';
 }
 
 .faqSection > .questions > .query::before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 20px;
   height: 10px;
@@ -27,8 +37,13 @@
 }
 
 .faqSection > .questions > .reply {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   margin-left: 30px;
+  display: none;
+}
+
+.faqSection > .questions > .reply.active {
+  display: block;
 }
 
 @media (max-width: 700px) {
