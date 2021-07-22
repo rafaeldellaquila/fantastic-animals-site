@@ -27,12 +27,12 @@
 }
 
 .animalSection > .images .image {
-  height: 24rem;
+  height: 23rem;
+  cursor: pointer;
 }
 
 .animalSection > .descriptions {
   grid-column: 3;
-  cursor: pointer;
 }
 
 .animalSection > .descriptions > .description {
