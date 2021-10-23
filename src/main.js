@@ -1,3 +1,5 @@
+import './css/main.css'
+
 function linkToImage() {
   const AnimalImageContent = document.querySelectorAll(
     '.animalSection > .images li'
@@ -7,10 +9,7 @@ function linkToImage() {
   ) //chamando minhas tags de texto
 
   //checando se tem, pra não bugar o site caso não entre as classes
-  if (
-    AnimalImageContent.length &&
-    AnimalDescriptionContent.length
-  ) {
+  if (AnimalImageContent.length && AnimalDescriptionContent.length) {
     //pra deixar ativo o primeiro, sim, eu sei que da pra fazer isso direto no css também
     AnimalDescriptionContent[0].classList.add('active')
     //ativando e desativando a classe que vai mostrar ou não conteudos de texto
@@ -67,9 +66,10 @@ function smoothScroll() {
 
 function scrollAnimation() {
   const sections = document.querySelectorAll('.gridLayout')
-  if (sections.length) {
-    const halfWindow = window.innerHeight * 0.5
-    function animateScroll() {
+
+  function animateScroll() {
+    if (sections.length) {
+      const halfWindow = window.innerHeight * 0.5
       sections.forEach((section) => {
         const sectionTop = section.getBoundingClientRect().top
         const visibleSection = sectionTop - halfWindow < 0
@@ -80,6 +80,7 @@ function scrollAnimation() {
       })
     }
   }
+
   animateScroll()
   window.addEventListener('scroll', animateScroll)
 }
