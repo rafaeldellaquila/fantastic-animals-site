@@ -10,14 +10,16 @@ function linkToImage() {
 
   //checando se tem, pra não bugar o site caso não entre as classes
   if (AnimalImageContent.length && AnimalDescriptionContent.length) {
-    //pra deixar ativo o primeiro, sim, eu sei que da pra fazer isso direto no css também
-    AnimalDescriptionContent[0].classList.add('active')
+    const defaultDirection = AnimalDescriptionContent[0].dataset.animation
+    AnimalDescriptionContent[0].classList.add('active', defaultDirection)
     //ativando e desativando a classe que vai mostrar ou não conteudos de texto
     function activeContent(index) {
       AnimalDescriptionContent.forEach((description) => {
         description.classList.remove('active')
       })
-      AnimalDescriptionContent[index].classList.add('active')
+
+      const direction = AnimalDescriptionContent[index].dataset.animation
+      AnimalDescriptionContent[index].classList.add('active', direction)
     }
     //loop que irá linkar através do index a imagem ao texto
     AnimalImageContent.forEach((image, index) => {
@@ -29,9 +31,7 @@ function linkToImage() {
 }
 
 function accordionList() {
-  const faqSection = document.querySelectorAll(
-    '.faqSection > .questions > .query'
-  ) //chamando minhas perguntas
+  const faqSection = document.querySelectorAll('[data-animation="accordion"]') //chamando minhas perguntas
   if (faqSection.length) {
     function activeAccordion() {
       this.classList.toggle('active')
@@ -46,7 +46,7 @@ function accordionList() {
 
 function smoothScroll() {
   const internalLinks = document.querySelectorAll(
-    '.headerMenu > .list a[href^="#"] '
+    '[data-animation="smooth"] a[href^="#"] '
   ) // chamando meus links internos
   internalLinks.forEach((link) => {
     link.addEventListener('click', scrollToSection)
@@ -65,7 +65,7 @@ function smoothScroll() {
 }
 
 function scrollAnimation() {
-  const sections = document.querySelectorAll('.gridLayout')
+  const sections = document.querySelectorAll('[data-animation="scroll"]')
 
   function animateScroll() {
     if (sections.length) {

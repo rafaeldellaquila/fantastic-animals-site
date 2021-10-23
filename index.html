@@ -16,7 +16,7 @@
   </head>
 
   <body>
-    <nav class="headerMenu">
+    <nav class="headerMenu" data-animation="smooth">
       <ul class="list">
         <li><a class="link" href="#animals">Animais</a></li>
         <li><a class="link" href="#faq">Faq</a></li>
@@ -32,7 +32,11 @@
       </ul>
     </nav>
 
-    <section class="gridLayout animalSection" id="animals">
+    <section
+      class="gridLayout animalSection"
+      id="animals"
+      data-animation="scroll"
+    >
       <h1 class="title">Animais Fantásticos</h1>
       <ul class="images">
         <li>
@@ -71,7 +75,7 @@
         </li>
       </ul>
       <div class="descriptions">
-        <section class="description">
+        <section class="description" data-animation="show-right">
           <h2 class="title">Raposa</h2>
           <p class="text">
             As raposas são animais mamíferos e onívoros pertencentes à família
@@ -92,7 +96,7 @@
             semelhantes às pupilas verticais dos felídeos.
           </p>
         </section>
-        <section class="description">
+        <section class="description" data-animation="show-down">
           <h2 class="title">Esquilo</h2>
           <p class="text">
             As raposas são animais mamíferos e onívoros pertencentes à família
@@ -113,7 +117,7 @@
             semelhantes às pupilas verticais dos felídeos.
           </p>
         </section>
-        <section class="description">
+        <section class="description" data-animation="show-right">
           <h2 class="title">Urso</h2>
           <p class="text">
             As raposas são animais mamíferos e onívoros pertencentes à família
@@ -134,7 +138,7 @@
             semelhantes às pupilas verticais dos felídeos.
           </p>
         </section>
-        <section class="description">
+        <section class="description" data-animation="show-down">
           <h2 class="title">Lobo</h2>
           <p class="text">
             As raposas são animais mamíferos e onívoros pertencentes à família
@@ -155,7 +159,7 @@
             semelhantes às pupilas verticais dos felídeos.
           </p>
         </section>
-        <section class="description">
+        <section class="description" data-animation="show-right">
           <h2 class="title">Macaco</h2>
           <p class="text">
             As raposas são animais mamíferos e onívoros pertencentes à família
@@ -176,7 +180,7 @@
             semelhantes às pupilas verticais dos felídeos.
           </p>
         </section>
-        <section class="description">
+        <section class="description" data-animation="show-down">
           <h2 class="title">Leão</h2>
           <p class="text">
             As raposas são animais mamíferos e onívoros pertencentes à família
@@ -200,28 +204,30 @@
       </div>
     </section>
 
-    <section class="gridLayout faqSection" id="faq">
+    <section class="gridLayout faqSection" id="faq" data-animation="scroll">
       <h1 class="title">FAQ</h1>
       <dl class="questions">
-        <dt class="query">Qual a idade dos animais?</dt>
+        <dt class="query" data-animation="accordion">
+          Qual a idade dos animais?
+        </dt>
         <dd class="reply">
           As raposas são animais mamíferos e onívoros pertencentes à família
           Canidae. São vulpídeos de porte médio, caracterizados por um focinho
           comprido e uma cauda longa e peluda.
         </dd>
 
-        <dt class="query">Eles são fantásticos?</dt>
+        <dt class="query" data-animation="accordion">Eles são fantásticos?</dt>
         <dd class="reply">
           Também apresentam como particularidade suas pupilas ovais, semelhantes
           às pupilas verticais dos felídeos.
         </dd>
-        <dt class="query">Qual a diferença?</dt>
+        <dt class="query" data-animation="accordion">Qual a diferença?</dt>
         <dd class="reply">
           As raposas são animais mamíferos e onívoros pertencentes à família
           Canidae. São vulpídeos de porte médio, caracterizados por um focinho
           comprido e uma cauda longa e peluda.
         </dd>
-        <dt class="query">Como proteger?</dt>
+        <dt class="query" data-animation="accordion">Como proteger?</dt>
         <dd class="reply">
           Também apresentam como particularidade suas pupilas ovais, semelhantes
           às pupilas verticais dos felídeos.
@@ -229,7 +235,11 @@
       </dl>
     </section>
 
-    <section class="gridLayout contactSection" id="contacts">
+    <section
+      class="gridLayout contactSection"
+      id="contacts"
+      data-animation="scroll"
+    >
       <h1 class="title">Contato</h1>
       <div class="map">
         <img class="image" src="img/mapa.png" alt="Mapa do Local" />
@@ -244,5 +254,6 @@
     <footer class="copyRights">Todos os direitos reservados.</footer>
 
     <script type="module" src="./src/main.js"></script>
+    <script type="module" src="./src/script.js"></script>
   </body>
 </html>

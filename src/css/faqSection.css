@@ -21,12 +21,12 @@
   cursor: pointer;
 }
 
-.faqSection > .questions > .query::after {
+[data-animation='accordion']::after {
   content: '⬎';
   margin-left: 10px;
 }
 
-.faqSection > .questions > .query.active::after {
+[data-animation='accordion'].active::after {
   content: '⬏';
 }
 
