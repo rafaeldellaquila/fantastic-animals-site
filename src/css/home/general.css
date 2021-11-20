@@ -1,11 +1,15 @@
 * {
   font-family: 'Roboto', serif;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 body {
   background: #faf6ed;
   color: #222;
+}
+
+.main-container {
   display: grid;
   grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
 }
@@ -31,7 +35,7 @@ body {
   transition: 0.3s;
 }
 @media (max-width: 700px) {
-  body {
+  .main-container {
     grid-template-columns: 1fr;
   }
 

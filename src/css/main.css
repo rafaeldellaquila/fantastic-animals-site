@@ -1,7 +1,8 @@
-@import url(./reset.css);
-@import url(./animalSection.css);
-@import url(./contactSection.css);
-@import url(./copyRights.css);
-@import url(./faqSection.css);
-@import url(./headerMenu.css);
-@import url(./style.css);
+@import url(./config/reset.css);
+@import url(./home/animalSection.css);
+@import url(./home/contactSection.css);
+@import url(./home/copyRights.css);
+@import url(./home/faqSection.css);
+@import url(./home/headerMenu.css);
+@import url(./home/general.css);
+@import url(./parts/modal.css);
